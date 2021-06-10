@@ -1,0 +1,52 @@
+h1,
+h2 {
+  color: blanchedalmond;
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #100f10;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 40px;
+  padding: 0;
+  text-align: center;
+}
+
+.mainDiv {
+  background-color: #100f10;
+}
+
+.titleArea {
+  background-color: #100f10;
+  display: flex;
+  border-bottom: 5px;
+}
+
+#popcornLogo {
+  width: 70px;
+  height: 70px;
+}
+
+.moviePosters {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.moviePosters img {
+  width: 80%;
+  padding: 10px;
+}
+
+.name-rating {
+  display: flex;
+  justify-content: center;
+}
+.name-rating h4 {
+  text-align: left;
+}
