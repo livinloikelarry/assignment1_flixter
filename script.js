@@ -39,7 +39,7 @@ function displayResults(movieData) {
   <div class = "name-rating">
     <h4>${movieData.title}</h4>
     <div id = "rating">
-      <p>⭐  ${movieData.vote_average}</p>
+      <p> ⭐ ${movieData.vote_average}</p>
     </div>
   </div>
 </div>`;
@@ -79,7 +79,10 @@ searchForm.addEventListener("submit", handleFormSubmit);
 async function handleShowMoreClick(event) {
   //increase the value of the api page so that more results are shown
   currentApiPage++;
-  console.log(currentApiPage);
+  console.log(
+    "the load button was clicked and the current page num is:",
+    currentApiPage
+  );
   const results = await getResults();
 }
 

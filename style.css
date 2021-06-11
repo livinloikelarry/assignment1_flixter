@@ -53,9 +53,13 @@ form {
   padding: 10px;
 }
 
+.individualMovie {
+  width: 25%;
+}
+
 .name-rating {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .name-rating h4 {
   text-align: left;
