@@ -19,6 +19,7 @@ const showMoreBtn = document.querySelector("#show-more-btn");
 // they are visible to the user
 async function getResults() {
   //const offset = currentApiPage * pageSize;
+  console.log("inside of getResults. page count:", currentApiPage);
   let response = await fetch(
     `https://api.themoviedb.org/3/movie/now_playing?api_key=${myApi}&language=en-US&page=${currentApiPage}`
   );
@@ -37,7 +38,7 @@ function displayResults(movieData) {
   posterArea.innerHTML += `<div class = "individualMovie">
   <img src="${urlOfPoster}" alt="${movieData.title}"></img>
   <div class = "name-rating">
-    <h4>${movieData.title}</h4>
+    <h3>${movieData.title}</h3>
     <div id = "rating">
       <p> ⭐ ${movieData.vote_average}</p>
     </div>
@@ -63,13 +64,16 @@ async function handleFormSubmit(event) {
 }
 
 async function getSearchResults(searchTerm) {
-  //const offset = currentApiPage * pageSize;
+  currentSearchTerm = searchTerm;
+  console.log("inside of search results search term is:", currentSearchTerm);
   let response = await fetch(
-    `https://api.themoviedb.org/3/search/movie?api_key=${myApi}&language=en-US&query=${searchTerm}&page=${currentApiPage}&include_adult=false`
+    `https://api.themoviedb.org/3/search/movie?api_key=${myApi}&language=en-US&query=${currentSearchTerm}&page=${currentApiPage}&include_adult=false`
   );
   let jsonResponse = await response.json();
   let responseData = jsonResponse.results;
   console.log(responseData);
+  currentApiPage = 1;
+  console.log("inside of search. count is:", currentApiPage);
   // will call function on each element in the array
   responseData.forEach((el) => displayResults(el));
 }
