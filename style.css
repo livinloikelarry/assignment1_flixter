@@ -14,7 +14,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   margin: 40px;
-  padding: 0;
+  padding: 20px;
   text-align: center;
 }
 
@@ -27,6 +27,15 @@ body {
   display: flex;
   border-bottom: 5px;
 }
+#Flixter-title {
+  padding-right: 25px;
+}
+
+form {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
 
 #popcornLogo {
   width: 70px;
@@ -36,10 +45,11 @@ body {
 .moviePosters {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .moviePosters img {
-  width: 80%;
+  width: 100%;
   padding: 10px;
 }
 
