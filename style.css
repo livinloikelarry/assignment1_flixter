@@ -64,3 +64,17 @@ form {
 .name-rating h4 {
   text-align: left;
 }
+
+/*When screen size is less than 900px*/
+@media screen and (max-width: 900px) {
+  .individualMovie {
+    width: 30%;
+  }
+}
+
+/*When screen size is less than 780px*/
+@media screen and (max-width: 780px) {
+  .individualMovie {
+    width: 50%;
+  }
+}
