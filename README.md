@@ -27,9 +27,7 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 
 ### Walkthough GIF
 
-`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
-
-<img src="http://g.recordit.co/1ursi0IN1L.gif" width=250><br>
+<img src="http://g.recordit.co/D20kqZgV7t.gif" width=250><br>
 <img src="http://g.recordit.co/jhP6hFkO6J.gif" width=250><br>
 
 ### Reflection
